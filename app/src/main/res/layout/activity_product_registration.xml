@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="#FFC107"
+    tools:context=".ProductRegistration">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@drawable/roundedcorner"
+        android:layout_height="wrap_content"
+        android:text="Product Registration"
+        android:gravity="center_horizontal"
+        android:textSize="24sp"
+        android:id="@+id/customer_registration_textView"
+        android:textColor="@color/Black"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:id="@+id/activity_productregistration_edittext"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="150dp"
+        android:background="#FFFFFF"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Price"
+        android:layout_below="@id/activity_productregistration_edittext"
+        android:id="@+id/activity_productregistration_edittext2"
+        android:paddingLeft="5dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/Black"
+        android:text="Insert"
+        android:id="@+id/activity_productregistration_insertbutton"
+        android:background="@color/White"
+        android:layout_below="@id/activity_productregistration_edittext2"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        />
+</RelativeLayout>

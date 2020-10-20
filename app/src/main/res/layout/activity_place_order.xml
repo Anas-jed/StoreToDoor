@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    android:padding="15dp"
+    tools:context=".PlaceOrder">
+
+    <TextView
+        android:id="@+id/place_order_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Place Order"
+        android:textColor="@color/Black"
+        android:background="@drawable/roundedcorner"
+        android:textSize="24sp" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/activity_placeOrder_productSpinner"
+        android:layout_above="@id/activity_placeOrder_quantity"
+        android:layout_marginBottom="20dp"
+        style="@style/SpinnerTheme"
+        android:background="@drawable/spinner_properties"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Product Quantity"
+        android:id="@+id/activity_placeOrder_quantity"
+        android:layout_above="@id/activity_placeOrder_areaSpinner"
+        android:paddingLeft="5dp"
+        android:background="#FFFFFF"
+        />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:id="@+id/activity_placeOrder_areaSpinner"
+        android:layout_centerInParent="true"
+        style="@style/SpinnerTheme"
+        android:background="@drawable/spinner_properties"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:paddingLeft="5dp"
+        android:layout_height="140dp"
+        android:gravity="start"
+        android:layout_marginTop="20dp"
+        android:hint="Complete Address"
+        android:id="@+id/activity_placeOrder_completeAddress"
+        android:layout_below="@id/activity_placeOrder_areaSpinner"
+        android:background="@color/White"
+        />
+
+    <Button
+        android:id="@+id/activity_placeOrder_placeOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="5dp"
+        android:background="#FFFFFF"
+        android:layout_below="@id/activity_placeOrder_completeAddress"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:text="Place Order" />
+
+
+</RelativeLayout>

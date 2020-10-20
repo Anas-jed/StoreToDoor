@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    android:padding="15dp"
+    tools:context=".MessengerPanel">
+
+
+    <TextView
+        android:id="@+id/messenger_panel_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/roundedcorner"
+        android:text="Messenger Panel"
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/activity_messengerpanel_updateLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/activity_messengerpanel_viewCurrentOrder"
+        android:background="#FFFFFF"
+        android:text="Update Location" />
+
+    <Button
+        android:id="@+id/activity_messengerpanel_viewCurrentOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:text="View Current Order" />
+
+    <Button
+        android:id="@+id/activity_messengerpanel_deliverOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_messengerpanel_viewCurrentOrder"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:text="Deliver Order's Here" />
+
+
+    <ProgressBar
+        android:id="@+id/activity_messengerpanel_progressIcon"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_messengerpanel_deliverOrder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"/>
+
+</RelativeLayout>

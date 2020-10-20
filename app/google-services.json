@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "327760709406",
+    "firebase_url": "https://storetodoor-19cbf.firebaseio.com",
+    "project_id": "storetodoor-19cbf",
+    "storage_bucket": "storetodoor-19cbf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327760709406:android:9f5ca09aa000194a332b0f",
+        "android_client_info": {
+          "package_name": "com.example.storetodoor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327760709406-qshpusfss6i29fo7ac4ntu5j2ldda0lc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmiZqSJAies4icRiRbNm3L8Ot51pi6ZyU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327760709406-qshpusfss6i29fo7ac4ntu5j2ldda0lc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

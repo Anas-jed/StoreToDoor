@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    android:padding="15dp"
+    tools:context=".CustomerPanel">
+
+    <TextView
+        android:id="@+id/customer_panel_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Customer Panel"
+        android:background="@drawable/roundedcorner"
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_centerInParent="true"
+        android:background="#FFFFFF"
+        android:text="PlaceOrder" />
+
+    <!--        android:layout_above="@id/button2"-->
+    <!--<Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:visibility="invisible"
+        android:text="View Order's Location" />
+-->
+
+    <!--<Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button2"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:text="View Previous Orders" />-->
+
+</RelativeLayout>

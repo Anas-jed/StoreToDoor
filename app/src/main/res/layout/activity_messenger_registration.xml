@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    android:padding="15dp"
+    tools:context=".MessengerRegistration">
+
+    <Button
+        android:id="@+id/messenger_registration_location_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messenger_registration_area_spinner"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:text="Get Current Location" />
+
+    <Button
+        android:id="@+id/messenger_registration_register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messenger_registration_location_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF"
+        android:text="Register" />
+
+
+    <EditText
+        android:id="@+id/messenger_registration_editText3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/messenger_registration_editText2"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:id="@+id/messenger_registration_editText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/messenger_registration_textView"
+        android:layout_marginTop="40dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:id="@+id/messenger_registration_editText2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/messenger_registration_editText"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="5dp" />
+
+    <Spinner
+        android:id="@+id/messenger_registration_area_spinner"
+        android:layout_width="140dp"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/select_area_prompt"
+        android:layout_height="50dp"
+        android:layout_below="@id/messenger_registration_editText3"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="5dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/messenger_registration_editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="27dp"
+        android:text="Select Area: "
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/messenger_registration_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@drawable/roundedcorner"
+        android:text="Messenger Registration"
+        android:textColor="@color/Black"
+        android:textSize="24sp" />
+
+</RelativeLayout>
